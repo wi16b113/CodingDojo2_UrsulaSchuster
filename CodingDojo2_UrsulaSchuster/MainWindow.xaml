@@ -17,7 +17,7 @@
         </Grid.ColumnDefinitions>
         <Border BorderBrush="Red" BorderThickness="2" Grid.ColumnSpan="1" HorizontalAlignment="Center" Height="54" VerticalAlignment="Center" Width="1060" Margin="7,4,6.6,2">
             <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" Height="55" Margin="0,0,0,0" VerticalAlignment="Center" Width="330">
-                <Image Source="Images\Warning-WF.png" Height="54" Width="54"></Image>
+                <Image Source="Images\Warning-WF.png" Width="54" Margin="0,3,0,0.2"/>
                 <Label Content="Überlauf Grauwasser" Height="55" Margin="0,0,0,0" VerticalAlignment="Center" Width="275" Foreground="#FFB91313" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24"/>
             </StackPanel>
         </Border>
