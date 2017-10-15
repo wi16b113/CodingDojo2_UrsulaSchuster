@@ -5,8 +5,109 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CodingDojo2_UrsulaSchuster"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="960" Width="1280" Background="Black">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Red" BorderThickness="2" Grid.ColumnSpan="1" HorizontalAlignment="Center" Height="54" VerticalAlignment="Center" Width="1060" Margin="7,4,6.6,2">
+            <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" Height="55" Margin="0,0,0,0" VerticalAlignment="Center" Width="330">
+                <Image Source="Images\Warning-WF.png" Height="54" Width="54"></Image>
+                <Label Content="Überlauf Grauwasser" Height="55" Margin="0,0,0,0" VerticalAlignment="Center" Width="275" Foreground="#FFB91313" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24"/>
+            </StackPanel>
+        </Border>
+        <Label Content="...tbd..." HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Center" Foreground="#FFF9F7F7"/>
+        <Border BorderBrush="Gray" BorderThickness="1,0,0,0" Grid.Column="1" HorizontalAlignment="Center" Height="928" Margin="2.4,2,2.6,0.4" Grid.RowSpan="2" VerticalAlignment="Center" Width="195">
+            <Grid HorizontalAlignment="Left" Height="928" Margin="2.2,0,0,0" VerticalAlignment="Top" Width="189">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="63"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="Images\Cloud sun02-WF.png"  HorizontalAlignment="Center"  Margin="0,0,0,0" VerticalAlignment="Center" />
+                <Label Content="20°" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Height="59" Margin="0.8,1,0.8,1.6" VerticalAlignment="Center" Width="124" Foreground="White" VerticalContentAlignment="Center" FontSize="18"/>
+
+                <Image Grid.Row="1" Source="Images\Wind.png"  HorizontalAlignment="Center"  Margin="0,0,0,0" VerticalAlignment="Center" />
+                <Label Content="12 km/h" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="59" Margin="0.8,1,0.8,1.6" VerticalAlignment="Center" Width="124" Foreground="White" VerticalContentAlignment="Center" FontSize="18"/>
+
+                <Image Grid.Row="2" Source="Images\Solar.png"  HorizontalAlignment="Center"  Margin="0,0,0,0" VerticalAlignment="Center" />
+                <Label Content="3.545 W" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Height="59" Margin="0.8,1,0.8,1.6" VerticalAlignment="Center" Width="124" Foreground="White" VerticalContentAlignment="Center" FontSize="18"/>
+
+                <Image Grid.Row="3" Source="Images\Man-01.png"  HorizontalAlignment="Center"  Margin="0,0,0,0" VerticalAlignment="Center" />
+                <Label Content="0" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" Height="59" Margin="0.8,1,0.8,1.6" VerticalAlignment="Center" Width="124" Foreground="White" VerticalContentAlignment="Center" FontSize="18"/>
+
+                <Image Grid.Row="4" Source="Images\Lock-WF.png"  HorizontalAlignment="Center"  Margin="0,0,0,0" VerticalAlignment="Center" />
+                <Label Content="OK" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" Height="59" Margin="0.8,1,0.8,1.6" VerticalAlignment="Center" Width="124" Foreground="White" VerticalContentAlignment="Center" FontSize="18"/>
+
+                <Image Grid.Row="5" Source="Images\Message Mail-WF.png"  HorizontalAlignment="Center"  Margin="0,0,0,0" VerticalAlignment="Center" />
+                <Label Content="7" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" Height="59" Margin="0.8,1,0.8,1.6" VerticalAlignment="Center" Width="124" Foreground="White" VerticalContentAlignment="Center" FontSize="18"/>
+
+                <Image Grid.Row="6" Source="Images\Tasks.png"  HorizontalAlignment="Center"  Margin="0,0,0,0" VerticalAlignment="Center" />
+                <Label Content="4" Grid.Column="1" Grid.Row="6" HorizontalAlignment="Center" Height="59" Margin="0.8,1,0.8,1.6" VerticalAlignment="Center" Width="124" Foreground="White" VerticalContentAlignment="Center" FontSize="18"/>
+
+                <Button Grid.ColumnSpan="2" Content="Übersicht" Margin="10,10,9.8,5.4" Grid.Row="7" FontSize="18" Background="#FF020202" BorderBrush="#FFF9F9F9" Foreground="White"/>
+                <Button Grid.ColumnSpan="2" Content="Räume" Margin="10,10,9.8,5.4" Grid.Row="8" FontSize="18" Background="#FF020202" BorderBrush="#FFF9F9F9" Foreground="White"/>
+                <Button Grid.ColumnSpan="2" Content="Geräte" Margin="10,10,9.8,5.4" Grid.Row="9" FontSize="18" Background="#FF020202" BorderBrush="#FFF9F9F9" Foreground="White"/>
+                <Button Grid.ColumnSpan="2" Content="Gebäude" Margin="10,10,9.8,5.4" Grid.Row="10" FontSize="18" Background="#FF020202" BorderBrush="#FFF9F9F9" Foreground="White"/>
+                <Button Grid.ColumnSpan="2" Content="Sicherheit" Margin="10,10,9.8,5.4" Grid.Row="11" FontSize="18" Background="#FF020202" BorderBrush="#FFF9F9F9" Foreground="White"/>
+                <Button Grid.ColumnSpan="2" Content="Multimedia" Margin="10,10,9.8,5.4" Grid.Row="12" FontSize="18" Background="#FF020202" BorderBrush="#FFF9F9F9" Foreground="White"/>
+
+                <Image Grid.Row="13" Source="Images\Bell New-WF.png"  HorizontalAlignment="Center"  Margin="10,5,10.2,10.4" VerticalAlignment="Center" Height="47" Width="43" />
+
+
+
+                <Border BorderBrush="Gray" BorderThickness="0,1,0,1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="185" Margin="7,61.4,6.8,0" Grid.Row="1" Grid.RowSpan="4" VerticalAlignment="Center" Width="175"/>
+                <Border BorderBrush="Gray" BorderThickness="0,1,0,1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="372" Margin="7,0,6.8,0" Grid.Row="7" Grid.RowSpan="6" VerticalAlignment="Center" Width="175"/>
+                <Grid Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="0.8,10,0,0" Grid.Row="13" VerticalAlignment="Top" Width="115">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="Images\Speaker Decrease - 01.png" HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="38"/>
+                    <Label Grid.ColumnSpan="3" Foreground="White" Content="4" HorizontalAlignment="Center" Height="42" Margin="38,0,38.2,0" VerticalAlignment="Center" Width="39" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Image Source="Images\Speaker Increase - 02.png" Grid.Column="2" HorizontalAlignment="Left" Height="42" Margin="0.2,0,0,0" VerticalAlignment="Top" Width="38"/>
+                </Grid>
+                <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="59" Margin="1,2.6,-4.2,0" Grid.Row="14" VerticalAlignment="Top" Width="192">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Content="12:34" HorizontalAlignment="Center" Height="26" Margin="3,2,3,1.6" VerticalAlignment="Center" Width="186" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+                    <Label Content="25.09.2017" HorizontalAlignment="Center" Height="24" Margin="3,3.4,3,2.2" Grid.Row="1" VerticalAlignment="Center" Width="186" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+
+                </Grid>
+
+
+
+
+            </Grid>
+        </Border>
+
     </Grid>
+
+
+
 </Window>

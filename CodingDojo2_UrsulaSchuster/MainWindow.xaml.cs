@@ -23,6 +23,7 @@ namespace CodingDojo2_UrsulaSchuster
         public MainWindow()
         {
             InitializeComponent();
+          
         }
     }
 }
